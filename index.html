@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 07</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <section class="container">
         <section id="visor"></section>
-        <button class="teclas" onclick="insert('1')">1</button>
-        <button class="teclas" onclick="insert('2')">2</button>
-        <button class="teclas" onclick="insert('3')">3</button>
-        <button class="teclas" onclick="reset()">Limpar</button>
-        <button class="teclas" onclick="insert('4')">4</button>
-        <button class="teclas" onclick="insert('5')">5</button>
-        <button class="teclas" onclick="insert('6')">6</button>
-        <button class="teclas" onclick="insertOperator('+')">+</button>
-        <button class="teclas" onclick="insert('7')">7</button>
-        <button class="teclas" onclick="insert('8')">8</button>
-        <button class="teclas" onclick="insert('9')">9</button>
-        <button class="teclas" onclick="insertOperator('-')">-</button>
-        <button class="teclas" onclick="insert('0')">0</button>
-        <button class="teclas" onclick="insertOperator('/')">/</button>
-        <button class="teclas" onclick="insertOperator('*')">*</button>
-        <button class="teclas" onclick="calculate()">=</button>
-        <button class="teclas" onclick="insert('.')">.</button>
+        <div class="div-teclas">
+            <button class="teclas" onclick="insert('1')">1</button>
+            <button class="teclas" onclick="insert('2')">2</button>
+            <button class="teclas" onclick="insert('3')">3</button>
+            <button class="teclas" id="limpar" onclick="reset()">Limpar</button>
+            <button class="teclas" onclick="insert('4')">4</button>
+            <button class="teclas" onclick="insert('5')">5</button>
+            <button class="teclas" onclick="insert('6')">6</button>
+            <button class="teclas" onclick="insertOperator('+')" id="mais">+</button>
+            <button class="teclas" onclick="insert('7')">7</button>
+            <button class="teclas" onclick="insert('8')">8</button>
+            <button class="teclas" onclick="insert('9')">9</button>
+            <button class="teclas" id="menos" onclick="insertOperator('-')" >-</button>
+            <button class="teclas" onclick="insert('0')">0</button>
+            <button class="teclas" id="dividido" onclick="insertOperator('/')">/</button>
+            <button class="teclas" id="vezes" onclick="insertOperator('*')" >*</button>
+            <button class="teclas" onclick="calculate()" id="igual">=</button>
+            <button class="teclas" onclick="insert('.')">.</button>
+        </div>
     </section>
-    <script src="script.js"></script>
-    
 </body>
 </html>
